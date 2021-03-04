@@ -18,14 +18,6 @@ class CellLSTM(nn.Module):
         self.w_h_u = Parameter(torch.rand(units, units), requires_grad=True)
         self.w_h_f = Parameter(torch.rand(units, units), requires_grad=True)
         self.w_h_o = Parameter(torch.rand(units, units), requires_grad=True)
-        # self.w_hy  = Parameter(torch.rand(units, out_features), requires_grad=True)
-
-        ### Glorot initializer ###
-        # nn.init.xavier_uniform_(self.w_xh)
-        #nn.init.xavier_uniform_(self.w_h_u)
-        #nn.init.xavier_uniform_(self.w_h_f)
-        #nn.init.xavier_uniform_(self.w_h_o)
-        # nn.init.xavier_uniform_(self.w_hy)
 
     def reset_hidden_state(self):
         self.c_t = torch.zeros(1, self.units).type(torch.FloatTensor)
