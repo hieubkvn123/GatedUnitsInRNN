@@ -15,7 +15,7 @@ from datasets import get_data
 from sklearn.preprocessing import MinMaxScaler
 
 ### Some constants ###
-data_file = '../data/stock.csv'
+data_file = './data/stock.csv'
 sequence_len = 12
 test_size = 0.3
 epochs = 15

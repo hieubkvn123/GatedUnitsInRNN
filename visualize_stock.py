@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-data_file = '../data/stock.csv'
+data_file = './data/stock.csv'
 data = pd.read_csv(data_file, header=0).dropna()
 data = data.sort_values('Date')
 

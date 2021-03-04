@@ -35,4 +35,4 @@ def get_data(data_file, sequence_len=12, test_size=0.4):
 
     return data, X_test
 
-get_data('../data/stock.csv')
+# get_data('../data/stock.csv')
